@@ -38,6 +38,11 @@ gem 'bcrypt', '~> 3.1.7'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+gem "twitter-bootstrap-rails"
+gem 'font-awesome-sass'
+
 group :development, :test do
   gem 'rspec-rails', '3.1.0'
   gem 'pry'
