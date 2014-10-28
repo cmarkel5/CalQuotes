@@ -1,22 +1,16 @@
 class Quote < ActiveRecord::Base
   
-  def self.get_all
-    # categories = %w[funny management sports life inspire love]
-    categories = %w[funny life inspire love]
-    categories.each do |category|
-      puts "category is #{category}"
-      search_url = "https://api.theysaidso.com/qod.json?category=#{category}"
-      puts "url defined"
-      response = HTTParty.get search_url
-      puts "response gathered"
-      Quote.create( tss_id:   response["contents"]["id"],
-                    content:  response["contents"]["quote"],
-                    author:   response["contents"]["author"],
-                    category: response["contents"]["category"]
-                  )
-      puts "quote created"
-    end
-  end
+  # def self.get_all
+  #   categories = %w[calvin forrestgump starwars]
+  #   categories.each do |category|
+  #     search_url = "http://www.iheartquotes.com/api/v1/random.json?source=#{category}"
+  #     JSON.create_id = nil
+  #     response = HTTParty.get search_url
+  #     Quote.create( ihq_id:   response["link"],
+  #                   content:  response["quote"],
+  #                   source:   response["source"] )
+  #   end
+  # end
 end
 
 

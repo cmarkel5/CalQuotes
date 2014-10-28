@@ -1,0 +1,22 @@
+<% provide(:title, 'Quotes from the Classics') %>
+
+<h1>Quotes from the Classics</h1>
+<h4>(Calvin and Hobbes, Forrest Gump, Star Wars)</h4>
+
+<div class = "form-button">
+  <%= link_to "Get another quote", '/one', class: "btn btn-large btn-success" %>
+</div>
+
+<p><%= @quote["quote"] %></p>
+<p>Source: <%= @quote["source"] %></p>
+
+<% case %>
+  <% when @quote["source"] == "calvin" %>
+    <%= image_tag "http://i.imgur.com/oyD8WDx.jpg?1" %>
+  <% when @quote["source"] == "forrestgump" %>
+    <%= image_tag "http://i.imgur.com/Lrrj9ja.jpg?1" %>
+  <% when @quote["source"] == "starwars" %>
+    <%= image_tag "http://i.imgur.com/ZWJcih9.jpg?1" %>
+<% end %>
+
+<!-- <pre><%# @quote %></pre> -->
