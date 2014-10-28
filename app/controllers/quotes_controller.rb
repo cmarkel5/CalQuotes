@@ -3,8 +3,8 @@ class QuotesController < ApplicationController
     @quotes = Quote.all
   end
 
-  def quod
-    @quotes = 
-  end
+  # def quod
+  #   @quotes = 
+  # end
 
 end
