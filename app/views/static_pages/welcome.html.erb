@@ -2,13 +2,15 @@
 
 <% provide(:title, 'Welcome') %>
 
-<div class="jumbotron_welcome">
+<div class="jumbotron-welcome">
   <h1> Welcome to quote.ly </h1>
   <p> Receive interesting quotes daily </p>
   <p> Store your fav quotes </p>
-  <%= link_to "Sign up", signup_path, class: "btn btn-large btn-primary" %>
-  <%= link_to "Sign in", signin_path, class: "btn btn-large btn-primary" %>
+  <div class = "form-button">
+    <%= link_to "Sign up", signup_path, class: "btn btn-large btn-primary" %>
+  </div>
   </br>
-  </br>
-  <%= link_to "Checkout today's quotes", 'quotes#index', class: "btn btn-large btn-success" %>
+  <div class = "form-button">
+    <%= link_to "Checkout today's quotes", 'quotes#index', class: "btn btn-large btn-success" %>
+  </div>
 </div>

@@ -3,7 +3,7 @@
 .jumbotron-welcome {
   width: 50%;
   margin: 10em auto;
-  background-color: grey;
+  background-color: transparent;
   padding-top: 0px;
   h1 {
     font-size: 3em;
@@ -13,6 +13,9 @@
     font-size: 1.2em;
     color: black;
     text-align: center;
+  }
+  .form-button {
+    @extend .text-center;
   }
 }
 
