@@ -1,7 +1,8 @@
 class Quote < ActiveRecord::Base
   
   def self.get_all
-    categories = %w[funny management sports life inspire love]
+    # categories = %w[funny management sports life inspire love]
+    categories = %w[funny life inspire love]
     categories.each do |category|
       puts "category is #{category}"
       search_url = "https://api.theysaidso.com/qod.json?category=#{category}"

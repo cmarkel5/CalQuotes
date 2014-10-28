@@ -1,10 +1,10 @@
 class QuotesController < ApplicationController
-  
-  def get_todays_7_quotes
-    Quote.get().save()
-    categories = %w[funny management sports life inspire love]
-    categories.each do |category|
-      Quote.get(category).save()
-    end
+  def index
+    @quotes = Quote.all
   end
+
+  def quod
+    @quotes = 
+  end
+
 end
