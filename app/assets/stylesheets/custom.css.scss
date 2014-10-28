@@ -1,5 +1,49 @@
 @import "bootstrap";
 
+.jumbotron-welcome {
+  width: 50%;
+  margin: 10em auto;
+  background-color: grey;
+  padding-top: 0px;
+  h1 {
+    font-size: 3em;
+    color: white;
+  }
+  p {
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+  }
+}
+
+.jumbotron-form {
+  width: 50%;
+  margin: 2em auto;
+  background-color: transparent;
+  padding-top: 0px;
+  p {
+    font-size: 1em;
+    color: black;
+    text-align: center;
+  }
+  .form-button {
+    @extend .text-center;
+  }
+  .form-group {
+    width: 40%;
+  }
+}
+
+#bg_welcome {
+  position: fixed; 
+  top: 0; 
+  left: 0;  
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.8;
+  z-index: -1;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {

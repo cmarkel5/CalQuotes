@@ -1,9 +1,14 @@
+<img src="http://i.imgur.com/kjVTerC.jpg" id="bg_welcome" alt="welcome background">
+
 <% provide(:title, 'Welcome') %>
 
-<h1> Welcome to quote.ly </h1>
-
-<%= link_to "Sign up", signup_path, class: "btn btn-large btn-primary" %>
-<%= link_to "Sign in", '#', class: "btn btn-large btn-primary" %>
-</br>
-</br>
-<%= link_to "Checkout today's quotes", '#', class: "btn btn-large btn-primary" %>
+<div class="jumbotron_welcome">
+  <h1> Welcome to quote.ly </h1>
+  <p> Receive interesting quotes daily </p>
+  <p> Store your fav quotes </p>
+  <%= link_to "Sign up", signup_path, class: "btn btn-large btn-primary" %>
+  <%= link_to "Sign in", signin_path, class: "btn btn-large btn-primary" %>
+  </br>
+  </br>
+  <%= link_to "Checkout today's quotes", 'quotes#index', class: "btn btn-large btn-success" %>
+</div>
