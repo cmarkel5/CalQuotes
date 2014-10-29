@@ -1,5 +1,5 @@
 class Quote < ActiveRecord::Base
-  
+  belongs_to :user
   # def self.get_all
   #   categories = %w[calvin forrestgump starwars]
   #   categories.each do |category|

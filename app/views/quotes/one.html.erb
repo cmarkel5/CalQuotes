@@ -3,11 +3,13 @@
 <h1>Quotes from the Classics</h1>
 <h4>(Calvin and Hobbes, Forrest Gump, Star Wars)</h4>
 
+<p><%= @quote["quote"] %></p>
+</br>
 <div class = "form-button">
   <%= link_to "Get another quote", '/one', class: "btn btn-large btn-success" %>
+  <%= link_to "Save quote to My Favs", quotes_path(quote: { content: @quote["quote"], source: @quote["source"], ihq_id: @quote["link"]}), method: :post, class: "btn btn-large btn-success" %>
 </div>
-
-<p><%= @quote["quote"] %></p>
+</br>
 <p>Source: <%= @quote["source"] %></p>
 
 <% case %>

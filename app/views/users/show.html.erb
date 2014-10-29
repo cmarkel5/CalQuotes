@@ -4,4 +4,11 @@
   <%= gravatar_for @user %>
   <%= @user.name %>
 </h2>
-   
+
+
+<% @user.quotes.each do |quote| %>
+<%= quote.source.upcase %>
+<%= quote.content %>
+</br>
+</br>
+<% end %>
