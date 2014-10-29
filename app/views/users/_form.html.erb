@@ -20,6 +20,10 @@
         <%= f.label :password_confirmation, "Confirmation", class: "control-label" %>
         <%= f.password_field :password_confirmation, class: "form-control input-sm" %>
         </br>
+
+        <%= f.label :phone, "Phone Number", class: "control-label" %>
+        <%= f.telephone_field :phone, class: "form-control input-sm" %>
+        </br>
           <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
       </div>
     </div>

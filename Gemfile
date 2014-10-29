@@ -43,6 +43,7 @@ gem 'autoprefixer-rails'
 gem "twitter-bootstrap-rails"
 gem 'font-awesome-sass'
 gem 'httparty', '~> 0.13.1'
+gem 'twilio-ruby'
 
 group :development, :test do
   gem 'rspec-rails', '3.1.0'
