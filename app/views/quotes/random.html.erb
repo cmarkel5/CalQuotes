@@ -8,7 +8,7 @@
   <p id="test"><%= @quote["quote"] %></p>
   </br>
   <div class="form-button">
-    <%= link_to "Get another quote", '/one', class: "btn btn-large btn-success" %>
+    <%= link_to "Get another quote", '/random', class: "btn btn-large btn-success" %>
     <% if signed_in? %>
       <%= link_to "Save quote to My Favs", quotes_path(quote: { content: @quote["quote"], 
           source: @quote["source"], ihq_id: @quote["link"]}), method: :post, 

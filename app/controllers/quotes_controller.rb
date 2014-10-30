@@ -13,6 +13,12 @@ class QuotesController < ApplicationController
     end
   end
 
+  def destroy
+    @quote = Quote.find(params[:id])
+    @quote.destroy
+    redirect_to current_user
+  end
+
   private
 
     def quote_params

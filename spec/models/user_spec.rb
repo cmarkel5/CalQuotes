@@ -2,7 +2,8 @@ require 'rails_helper'
 
 describe User do
   before { @user = User.new(name: "Chris Markel", email: "cmarkel5@gmail.com",
-                            password: "foobar", password_confirmation: "foobar") }
+                            password: "foobar", password_confirmation: "foobar",
+                            phone: "9999999999") }
 
   subject { @user }
 
@@ -13,6 +14,7 @@ describe User do
   it { should respond_to(:password_confirmation) }
   it { should respond_to(:authenticate) }
   it { should respond_to(:remember_token) }
+  it { should respond_to(:phone) }
 
   it { should be_valid }
 
@@ -121,6 +123,13 @@ describe User do
     describe "remember token" do
       before { @user.save }
       it { expect(@user.remember_token).not_to be_blank }
+    end
+
+    describe "phone" do
+      context "not present" do
+        before { @user.phone = " " }
+        it { should_not be_valid }
+      end
     end
   end
 end

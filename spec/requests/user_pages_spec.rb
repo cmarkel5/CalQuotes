@@ -27,6 +27,7 @@ describe "User pages" do
         fill_in "Email",        with: "cmarkel5@gmail.com"
         fill_in "Password",     with: "foobar"
         fill_in "Confirmation", with: "foobar"
+        fill_in "Phone",        with: "9999999999"
       end
 
       it "should create a user" do
@@ -42,7 +43,11 @@ describe "User pages" do
       end
 
       describe "followed by signout" do
-        before { click_link "Sign out" }
+        before do
+          click_button submit
+          click_link "Sign out"
+        end
+        
         it { should have_link('Sign in') }
       end
     end
