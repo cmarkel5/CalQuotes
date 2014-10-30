@@ -19,21 +19,45 @@
   }
 }
 
-.jumbotron-form {
+.jumbotron-about {
   width: 50%;
-  margin: 2em auto;
-  background-color: transparent;
-  padding-top: 0px;
+  margin: 3.5em auto;
+  background-color: rgb(248,248,255);
+  padding: 1em;
+  h3 {
+    text-align: center;
+  }
+  p {
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+  }
+}
+
+.jumbotron-my_favs {
+  width: 70%;
+  margin: .8em auto;
+  background-color: rgb(248,248,255);
+  padding: 1em;
+  h3 {
+    text-align: center;
+  }
   p {
     font-size: 1em;
     color: black;
     text-align: center;
   }
-  .form-button {
-    @extend .text-center;
-  }
-  .form-group {
-    width: 40%;
+}
+
+.jumbotron-quotes {
+  width: 70%;
+  margin: 0.5em auto;
+  background-color: rgb(248,248,255);
+  padding: 0.5em;
+  p {
+    font-size: 18em;
+    color: black;
+    text-align: center;
   }
 }
 
@@ -45,6 +69,10 @@
   min-height: 100%;
   opacity: 0.8;
   z-index: -1;
+}
+
+#test {
+  font-size: 1.5em;
 }
 
 /* typography */
@@ -62,6 +90,15 @@ h1 {
 
 h2 {
   font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+
+h3 {
+  font-size: 1.5em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;

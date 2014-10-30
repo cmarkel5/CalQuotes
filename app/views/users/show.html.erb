@@ -1,14 +1,15 @@
 <% provide(:title, @user.name) %>
 <h1>My Favs</h1>
+
 <h2>
   <%= gravatar_for @user %>
   <%= @user.name %>
 </h2>
 
-
-<% @user.quotes.each do |quote| %>
-  <%= quote.source.upcase %>
-  <%= quote.content %>
-</br>
-</br>
-<% end %>
+<div class="jumbotron-my_favs">
+  <% @user.quotes.each do |quote| %>
+    <p><%= quote.source.upcase %></p>
+    <p><%= quote.content %></p>
+    </br>
+  <% end %>
+</div>

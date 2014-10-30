@@ -1,0 +1,32 @@
+<% provide(:title, 'Quotes from the Classics') %>
+
+<h1>Quotes from the Classics</h1>
+
+<h3>(Calvin and Hobbes, Forrest Gump, or Star Wars)</h3>
+
+<div class="jumbotron-quotes text-center"
+  <p id="test"><%= @quote["quote"] %></p>
+  </br>
+  <div class="form-button">
+    <%= link_to "Get another quote", '/one', class: "btn btn-large btn-success" %>
+    <% if signed_in? %>
+      <%= link_to "Save quote to My Favs", quotes_path(quote: { content: @quote["quote"], 
+          source: @quote["source"], ihq_id: @quote["link"]}), method: :post, 
+          class: "btn btn-large btn-success" %>
+    <% else %>
+      <%= link_to "Save quote to My Favs", signin_path, class: "btn btn-large btn-success" %>
+    <% end %>
+  </div>
+  </br>
+</div>
+
+<div class="text-center">
+  <% case %>
+    <% when @quote["source"] == "calvin" %>
+      <%= image_tag "http://i.imgur.com/oyD8WDx.jpg?2" %>
+    <% when @quote["source"] == "forrestgump" %>
+      <%= image_tag "http://i.imgur.com/Lrrj9ja.jpg?2" %>
+    <% when @quote["source"] == "starwars" %>
+      <%= image_tag "http://i.imgur.com/ZWJcih9.jpg?3" %>
+  <% end %>
+</div>

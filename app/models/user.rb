@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
             uniqueness: { case_sensitive: false }
   has_secure_password
   validates :password, length: { minimum: 6, maximum: 20 }
-  # validates :phone
+  validates :phone, length: { is: 10 }
 
   def User.new_remember_token
     SecureRandom.urlsafe_base64
@@ -32,7 +32,7 @@ class User < ActiveRecord::Base
     client.account.messages.create(
       :from => from,
       :to => self.phone,
-      :body => "Hey #{self.name}, welcome to quote.ly!"
+      :body => "Hey #{self.name}, welcome to quotely!"
     )
   end
 
