@@ -5,10 +5,18 @@ class Quote < ActiveRecord::Base
   validates :source, presence: true
 
   def self.random
-    sources = %w[calvin forrestgump starwars]
-    source = sources.sample
-    search_url = "http://www.iheartquotes.com/api/v1/random.json?source=#{source}"
-    JSON.create_id = nil
-    HTTParty.get search_url
+    cal_quote = self.grab_quote
+    until cal_quote["source"] == "calvin" do 
+      cal_quote = self.grab_quote
+    end
+    return cal_quote
   end
+
+  private
+    def self.grab_quote 
+      source = "calvin"
+      search_url = "http://www.iheartquotes.com/api/v1/random.json?source=#{source}"
+      JSON.create_id = nil
+      return HTTParty.get search_url
+    end
 end

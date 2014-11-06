@@ -1,16 +1,19 @@
-<img src="http://i.imgur.com/kjVTerC.jpg" id="bg_welcome" alt="welcome background">
+<img src="http://i.imgur.com/suZdHNG.jpg" id="background_welcome" alt="Calvin and Hobbes background">
 
 <% provide(:title, 'Welcome') %>
 
-<div class="jumbotron-welcome">
-  <h1> Welcome to quotely </h1>
-  <p> Check out quotes from the classics | save your favorites! </p>
-  </br>
-  <div class = "form-button">
-    <%= link_to "Sign up", signup_path, class: "btn btn-large btn-primary" %>
-  </div>
-  </br>
-  <div class = "form-button">
-    <%= link_to "Get a quote", '/random', class: "btn btn-large btn-success" %>
+<div class="row">
+  <div class="col-md-offset-6 col-md-4 col-sm-8 col-sm-offset-2">
+    <div class="well">
+      <h1> Welcome to calQuotes </h1>
+      <p class="text-center"> Get quotes from Calvin and Hobbes!</p>
+      </br>
+      <div class = "form-button text-center">
+        <%= link_to "Sign up", signup_path, class: "btn btn-large btn-warning" %>
+        <%= link_to "Get a quote", '/random', class: "btn btn-large btn-warning" %>
+      </div>
+      </br>
+    </div>
   </div>
 </div>
+

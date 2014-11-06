@@ -8,22 +8,22 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/welcome">quotely</a>
+      <a class="navbar-brand" href="/welcome">calQuotes</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Quotes from the Classics", random_path %></li>
+        <li><%= link_to "ABOUT", about_path %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "QUOTES", random_path %></li>
         <% if signed_in? %>
-          <li><%= link_to "My Favs", user_path(current_user) %></li>
-          <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
+          <li><%= link_to "FAVS", user_path(current_user) %></li>
+          <li><%= link_to "SIGN OUT", signout_path, method: "delete" %></li>
         <% else %>
-          <li><%= link_to "Sign up", signup_path %></li>
-          <li><%= link_to "Sign in", signin_path %></li>
+          <li><%= link_to "SIGN UP", signup_path %></li>
+          <li><%= link_to "SIGN IN", signin_path %></li>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->

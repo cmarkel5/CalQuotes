@@ -33,7 +33,7 @@ Quotely was developed for a project for the Fall 2014 Web Development Immersive 
 Explore quotely for yourself on [Heroku](https://quotelyy.herokuapp.com/).
 
 ##Backlog
-A full list of user stories can be found on this [Trello Board](https://trello.com/b/lY67W3wk/quotely-project-1). A mockup of the app is available [here](https://moqups.com/#!/edit/cmarkel5/ku081S55).
+A full list of user stories can be found on this [Trello Board](https://trello.com/b/lY67W3wk/quotely-project-1). A mockup of the app is available [here](https://moqups.com/cmarkel5/ku081S55/).
 
 Below is the ERD for quotely.
 

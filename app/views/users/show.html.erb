@@ -6,13 +6,17 @@
   <%= @user.name %>
 </h2>
 
-<div class="jumbotron-my_favs">
-  <% @user.quotes.each do |quote| %>
-    <p><%= quote.source.upcase %></p>
-    <p><%= quote.content %></p>
-    <div class="form-button text-right">
-      <%= link_to "Delete", quote, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-large btn-danger" %>
+<div class="row">
+  <div class="col-md-offset-1 col-md-10">
+    <div id="favs" class="text-center">
+      <% @user.quotes.each do |quote| %>
+        <p><%= quote.source.upcase %></p>
+        <p><%= quote.content %></p>
+        <div class="form-button text-right">
+          <%= link_to "Delete", quote, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-large btn-danger" %>
+        </div>
+        </br>
+      <% end %>
     </div>
-    </br>
-  <% end %>
+  </div>
 </div>

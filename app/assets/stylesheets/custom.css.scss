@@ -1,69 +1,57 @@
 @import "bootstrap";
+@import "_config";
 
-.jumbotron-welcome {
-  width: 50%;
-  margin: 10em auto;
-  background-color: transparent;
-  padding-top: 0px;
-  h1 {
-    font-size: 3em;
-    color: white;
-  }
-  p {
-    font-size: 1.2em;
-    color: black;
-    text-align: center;
-  }
-  .form-button {
-    @extend .text-center;
-  }
+.well {
+  opacity: .85;
+  margin-top: 20px;
+  border-radius: 50px 50px 50px 50px;
 }
 
-.jumbotron-about {
-  width: 50%;
+.btn-hobbes {
+  width: 100px;
+  opacity: .75;
+  background-color: $hobbes-orange;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar {
+  font-size: 16px;
+  background-color: $hobbes-orange; 
+  background-image: none;
+  background-repeat: no-repeat;
+  opacity: .8;
+  border-radius: 0px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  color: black !important;
+}
+
+#about {
   margin: 3.5em auto;
-  background-color: rgb(248,248,255);
+  background-color: rgb(248,248,255); /* Occupy Lilac */
   padding: 1em;
-  h3 {
-    text-align: center;
-  }
   p {
     font-size: 1.2em;
     color: black;
-    text-align: center;
   }
 }
 
-.jumbotron-my_favs {
-  width: 70%;
+#favs {
   margin: .8em auto;
-  background-color: rgb(248,248,255);
+  background-color: rgb(248,248,255); /* Occupy Lilac */
   padding: 1em;
-  h3 {
-    text-align: center;
-  }
   p {
     font-size: 1em;
     color: black;
-    text-align: center;
   }
 }
 
-.jumbotron-quotes {
-  width: 70%;
-  margin: 0.5em auto;
-  background-color: rgb(248,248,255);
-  padding: 0.5em;
-  p {
-    font-size: 18em;
-    color: black;
-    text-align: center;
-  }
-}
-
-#bg_welcome {
-  position: fixed; 
-  top: 0; 
+#background_welcome {
+  position: absolute; 
+  top: -50px; 
   left: 0;  
   min-width: 100%;
   min-height: 100%;
@@ -79,35 +67,32 @@
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  text-align: center;
 }
 
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
-  text-align: center;
 }
 
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
   font-weight: normal;
-  color: #999;
+  color: $lightishGray;
 }
 
 h3 {
   font-size: 1.5em;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
   font-weight: normal;
-  color: #999;
+  color: $lightishGray;
 }
 
 p {
   font-size: 1.1em;
-  line-height: 1.7em;
+  line-height: 1em;
 }
-
