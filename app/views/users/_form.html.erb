@@ -24,24 +24,12 @@
         <%= f.label :phone, "Phone Number", class: "control-label" %>
         <%= f.telephone_field :phone, class: "form-control input-sm" %>
         </br>
-        <!-- <p> "Would you like to receive an interesting quote each day?"
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-              Sounds fun
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-              I'd rather not
-          </label>
-        </div> -->
-          <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+        
+        <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
       </div>
     </div>
   <% end %>
   </br>
 
-  <p>Already a user? <%= link_to "Sign in!", signin_path %></p
+  <p>Already a user? <%= link_to "Sign in!", signin_path %></p>
 </div>
