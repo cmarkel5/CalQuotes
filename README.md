@@ -6,7 +6,7 @@
 
 CalQuotes is a web application that sends its subscribers a Calvin and Hobbes quote daily via text message. On the site, a user may look through as many Calvin and Hobbes quotes as they wish and save their favorites to their profile page. The app leverages the IHeartQuotes API to generate the quotes and the Twilio API to handle text messaging features.
 
-CalQuotes was developed for a project for the Fall 2014 Web Development Immersive course at General Assembly. It was developed over a week-long sprint to model the agile software development process. The GitHub for CalQuotes is available [here](https://github.com/cmarkel5/CalQuotes).
+CalQuotes was developed for a project for the Fall 2014 Web Development Immersive course at General Assembly. It was developed over a week-long sprint to model the Agile software development process. The GitHub for CalQuotes is available [here](https://github.com/cmarkel5/CalQuotes).
 
 ##Technologies Used
 * Ruby 2.1.3
