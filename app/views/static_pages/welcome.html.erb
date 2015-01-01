@@ -1,19 +1,16 @@
-<img src="http://i.imgur.com/suZdHNG.jpg" id="background_welcome" alt="Calvin and Hobbes background">
+<img src="assets/CalvinAndHobbes_welcome.jpg" id="background" alt="Calvin and Hobbes background">
 
 <% provide(:title, 'Welcome') %>
 
-<div class="row">
-  <div class="col-md-offset-6 col-md-4 col-sm-8 col-sm-offset-2">
-    <div class="well">
-      <h1> Welcome to calQuotes </h1>
-      <p class="text-center"> Get quotes from Calvin and Hobbes!</p>
-      </br>
-      <div class = "form-button text-center">
-        <%= link_to "Sign up", signup_path, class: "btn btn-large btn-warning" %>
-        <%= link_to "Get a quote", random_path, class: "btn btn-large btn-warning" %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-6">
+      <div class="well-welcome text-center">
+        <h3> Welcome to CalQuotes </h3>
+        <p>Get quotes from Calvin and Hobbes!</p>
+        <%= link_to "Sign up", signup_path, class: "btn btn-sm btn-warning add-margin-right size-adjustment" %>
+        <%= link_to "Get a quote", random_path, class: "btn btn-sm btn-warning add-margin-left" %>
       </div>
-      </br>
     </div>
   </div>
 </div>
-

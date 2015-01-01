@@ -1,22 +1,20 @@
 <% provide(:title, @user.name) %>
-<h1>FAVS</h1>
 
-<h2>
+
+<div class="row text-center">
   <%= gravatar_for @user %>
-  <%= @user.name %>
-</h2>
+  <p class="lead"><%= @user.name %></p>
+</div>
 
-<div class="row">
-  <div class="col-md-offset-1 col-md-10">
-    <div id="favs" class="text-center">
-      <% @user.quotes.each do |quote| %>
-        <p><%= quote.source.upcase %></p>
-        <p><%= quote.content %></p>
-        <div class="form-button text-right">
-          <%= link_to "Delete", quote, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-large btn-danger" %>
-        </div>
-        </br>
-      <% end %>
-    </div>
+<div class="container-fluid">
+  <div class="row">
+    <% @user.quotes.each do |quote| %>
+      <div class="text-center col-md-9 col-md-offset-1">
+        <p><em><%= quote.content %></em></p>
+      </div>
+      <div class="col-md-1">
+        <%= link_to "X", quote, method: :delete, data: { confirm: "Are you sure you delete this favorite quote?" }, class: "btn btn btn-sm btn-warning" %>
+      </div>
+    <% end %>
   </div>
 </div>

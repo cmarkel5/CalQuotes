@@ -1,98 +1,70 @@
-@import "bootstrap";
 @import "_config";
 
-.well {
-  opacity: .85;
-  margin-top: 20px;
-  border-radius: 50px 50px 50px 50px;
+body {
+  margin-top: 75px;
+  background-color: $lightBlue;
 }
 
-.btn-hobbes {
-  width: 100px;
-  opacity: .75;
-  background-color: $hobbes-orange;
-  color: black;
-  font-weight: bold;
-}
-
-.navbar {
-  font-size: 16px;
-  background-color: $hobbes-orange; 
-  background-image: none;
-  background-repeat: no-repeat;
-  opacity: .8;
-  border-radius: 0px;
-}
-
-.navbar-brand {
-  font-size: 30px;
-  color: black !important;
-}
-
-#about {
-  margin: 3.5em auto;
-  background-color: rgb(248,248,255); /* Occupy Lilac */
-  padding: 1em;
-  p {
-    font-size: 1.2em;
-    color: black;
-  }
-}
-
-#favs {
-  margin: .8em auto;
-  background-color: rgb(248,248,255); /* Occupy Lilac */
-  padding: 1em;
-  p {
-    font-size: 1em;
-    color: black;
-  }
-}
-
-#background_welcome {
+#background {
   position: absolute; 
   top: -50px; 
   left: 0;  
   min-width: 100%;
-  min-height: 100%;
   opacity: 0.8;
   z-index: -1;
 }
 
-#test {
-  font-size: 1.5em;
+.well {
+  background-color: $beige;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
-/* typography */
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-  text-align: center;
+.well-welcome {
+  background-color: $beige;
+  padding: 2px 0 8px 0;
+  h3 {
+    margin-top: 0;
+  }
 }
 
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
+.form-input {
+  width: 100%;
+  border: none;
+  margin-bottom: 10px;
 }
 
-h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  font-weight: normal;
-  color: $lightishGray;
+img.team {
+  width: 50%;
+  border: 2px $hobbes-orange solid;
 }
 
-h3 {
-  font-size: 1.5em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  font-weight: normal;
-  color: $lightishGray;
+.gravatar {
+  border: 2px $hobbes-orange solid;
 }
 
-p {
-  font-size: 1.1em;
-  line-height: 1em;
+img.quotes-pic {
+  width: 75%;
+  border: 2px $hobbes-orange solid; 
+}
+
+.add-margin-top {
+  margin-top: 23px;
+}
+
+.add-margin-top-APIs {
+  margin-top: 33px;
+}
+
+.add-margin-right {
+  margin-right: 8px;
+}
+
+.add-margin-left {
+  margin-left: 8px;
+}
+
+.size-adjustment {
+  width: 97px;
+  height: 29px;
 }

@@ -1,23 +1,24 @@
-<% provide(:title, 'Quotes from the Classics') %>
-
-<h1>Calvin and Hobbes Quotes</h1>
+<% provide(:title, 'Quotes') %>
 
 <div class="text-center">
-  <p><%= @quote["quote"] %></p>
+  <p class="lead"><strong><%= @quote["quote"] %></strong></p>
+  <%= link_to "Next", random_path, class: "btn btn-sm btn-warning add-margin-right" %>
+  <% if signed_in? %>
+    <%= link_to "Save", quotes_path(quote: { content: @quote["quote"], 
+        source: @quote["source"], ihq_id: @quote["link"]}), method: :post, 
+        class: "btn btn-sm btn-warning add-margin-left" %>
+  <% else %>
+    <%= link_to "Save", signin_path, class: "btn btn-sm btn-warning add-margin-left" %>
+  <% end %>
   </br>
-  <div class="form-button">
-    <%= link_to "Next", random_path, class: "btn btn-large btn-hobbes" %>
-    <% if signed_in? %>
-      <%= link_to "Save", quotes_path(quote: { content: @quote["quote"], 
-          source: @quote["source"], ihq_id: @quote["link"]}), method: :post, 
-          class: "btn btn-large btn-hobbes" %>
-    <% else %>
-      <%= link_to "Save", signin_path, class: "btn btn-large btn-hobbes" %>
-    <% end %>
-  </div>
+  </br>
   </br>
 </div>
 
-<div class="text-center">
-  <%= image_tag "http://i.imgur.com/oyD8WDx.jpg?2" %>
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+      <p><img src="assets/CalvinAndHobbes_walking.jpg" class="quotes-pic"/></p>
+    </div>
+  </div>
 </div>

@@ -38,7 +38,7 @@ class User < ActiveRecord::Base
   end
 
   def send_welcome_message
-    twilio("Hey #{self.name}, welcome to calQuotes!")
+    twilio("Hey #{self.name}, welcome to CalQuotes!")
   end
 
   private

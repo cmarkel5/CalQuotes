@@ -1,4 +1,4 @@
-#Chris' GitHub README for GitHub README for [CalQuotes](https://cal-quotes.herokuapp.com/) <br/><br/>
+#Chris' GitHub README for [CalQuotes](https://cal-quotes.herokuapp.com/) <br/><br/>
 
 ##General Assembly, Web Development Immersive (WDI), Fall 2014, Project 1
 
