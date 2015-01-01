@@ -1,4 +1,4 @@
-#Chris' GitHub README for [CalQuotes](https://cal-quotes.herokuapp.com/) <br/><br/>
+#Chris' GitHub README for [CalQuotes](https://calquotes.herokuapp.com/) <br/><br/>
 
 ##General Assembly, Web Development Immersive (WDI), Fall 2014, Project 1
 
@@ -30,7 +30,7 @@ CalQuotes was developed for a project for the Fall 2014 Web Development Immersiv
 
 
 ##Production
-Explore CalQuotes for yourself on [Heroku](https://cal-quotes.herokuapp.com/).
+Explore CalQuotes for yourself on [Heroku](https://calquotes.herokuapp.com/).
 
 ##Backlog
 A full list of user stories can be found on this [Trello Board](https://trello.com/b/lY67W3wk/calquotes-project-1).
