@@ -9,10 +9,10 @@
 <div class="container-fluid">
   <div class="row">
     <% @user.quotes.each do |quote| %>
-      <div class="text-center col-xs-9 col-xs-offset-1">
+      <div class="text-center col-xs-9 col-sm-7 col-xs-offset-1 col-sm-offset-2">
         <p><em><%= quote.content %></em></p>
       </div>
-      <div class="col-xs-1">
+      <div class="col-xs-1 sm-1">
         <%= link_to "X", quote, method: :delete, data: { confirm: "Delete this quote?" } %>
       </div>
     <% end %>
